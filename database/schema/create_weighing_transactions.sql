@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS WeighingTransactions (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    TransactionGuid TEXT NOT NULL UNIQUE,
+    VehicleNumber TEXT NOT NULL,
+    VehicleTypeId INTEGER,
+    MaterialTypeId INTEGER,
+    CustomerId INTEGER,
+    FirstWeight REAL,
+    FirstWeightTimestamp DATETIME,
+    SecondWeight REAL,
+    SecondWeightTimestamp DATETIME,
+    NetWeight REAL,
+    Charges REAL,
+    Status TEXT NOT NULL,
+    OperatorId INTEGER,
+    Remarks TEXT,
+    CreatedAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    LastUpdatedAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (VehicleTypeId) REFERENCES VehicleTypes(Id),
+    FOREIGN KEY (MaterialTypeId) REFERENCES MaterialTypes(Id),
+    FOREIGN KEY (CustomerId) REFERENCES Customers(Id),
+    FOREIGN KEY (OperatorId) REFERENCES Users(Id)
+);
