@@ -1,0 +1,19 @@
+{
+    "port": "COM4",
+    "baudrate": 2400,
+    "databits": 8,
+    "parity": "N",
+    "stopbits": 1.0,
+    "flowcontrol": false,
+    "enable_parsing": 1,
+    "start_of_text_ascii": 2,
+    "end_of_text_ascii": 3,
+    "start_prefixes": "",
+    "expected_data_length": 5,
+    "trimming_mode": "none",
+    "start_index": 0,
+    "remove_zeros": 1,
+    "reverse_string": 0,
+    "filter_digits": 1,
+    "refresh_rate": "Normal"
+}

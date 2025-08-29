@@ -1,0 +1,18 @@
+{
+    "port": "COM4",
+    "baud": "9600",
+    "databits": "8",
+    "parity": "N",
+    "stopbits": "1",
+    "flow": false,
+    "start_ascii": "91",
+    "end_ascii": "93",
+    "prefixes": " ",
+    "expected_length": "8",
+    "remove_zeros": true,
+    "reverse": false,
+    "digits_only": false,
+    "start_index": "2",
+    "use_index_mode": true,
+    "parsing_enabled": true
+}
